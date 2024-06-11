@@ -11,18 +11,21 @@ export default function Hero() {
             <div className="flex flex-col justify-center items-center">
                 <h1 className="text-[98px] leading-[50px]">Project<br/><span className="text-[50px]">Lorum</span></h1>
             </div>
-            <div className="mx-24 my-10">
+            <div className="mx-[94px] mt-16">
                 <Stack spacing={2} direction="row">
                     <Button variant="contained" sx={{backgroundColor: '#e2e2e2', "&:hover": {backgroundColor: "#818781"}}}><ArrowBackIcon className="text-[black]"/></Button>
                     <Button variant="contained" sx={{backgroundColor: '#e2e2e2', "&:hover": {backgroundColor: "#818781"}}}><ArrowForwardIcon className="text-[black]"/></Button>
                 </Stack>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="mx-[94px] mt-[90px]">
                 <h1 className="text-[30px]">1 <LinearScaleIcon fontSize="large" className="rotate-[-45deg]"/> 4</h1>
             </div>
         </div>
         <div className="flex-[4]">
             <img src="assets\projects\project_1.png" className="w-[800px] h-[700px] object-cover" alt="" />
+            <div className="bg-slate-500">
+                <h2>View Project<ArrowForwardIcon className="text-[black]"/></h2>
+            </div>
         </div>
     </div>
   )
