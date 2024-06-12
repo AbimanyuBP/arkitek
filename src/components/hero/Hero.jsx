@@ -23,8 +23,8 @@ export default function Hero() {
         </div>
         <div className="flex-[4]">
             <img src="assets\projects\project_1.png" className="w-[800px] h-[700px] object-cover" alt="" />
-            <div className="bg-slate-500">
-                <h2>View Project<ArrowForwardIcon className="text-[black]"/></h2>
+            <div className="bg-white cursor-pointer w-[200px] h-[50px] relative bottom-[50px] flex items-center">
+                <h2 className="ml-[20px]">View Project <ArrowForwardIcon className="text-[black]" fontSize="small"/></h2>
             </div>
         </div>
     </div>
