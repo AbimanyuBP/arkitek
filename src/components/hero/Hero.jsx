@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import LinearScaleIcon from '@mui/icons-material/LinearScale';
+import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import Stack from '@mui/material/Stack';
 
 export default function Hero() {
@@ -18,7 +18,7 @@ export default function Hero() {
                 </Stack>
             </div>
             <div className="mx-[94px] mt-[90px]">
-                <h1 className="text-[30px]">1 <LinearScaleIcon fontSize="large" className="rotate-[-45deg]"/> 4</h1>
+                <h1 className="text-[30px]">1 <HorizontalRuleIcon sx={{fontSize: "50px", color: "gray"}} className="rotate-[-45deg]"/> 4</h1>
             </div>
         </div>
         <div className="flex-[4]">
