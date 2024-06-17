@@ -5,6 +5,7 @@ import project3 from "/assets/projects/project_3.jpg"
 import project4 from "/assets/projects/project_4.jpg"
 import project5 from "/assets/projects/project_5.jpg"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
+import Button from "../misc/Button"
 
 
 export default function Showcase() {
@@ -49,9 +50,7 @@ export default function Showcase() {
             </ImageList>
         </Box>
         <div className="flex justify-end mt-5">
-            <div className="flex justify-center items-center bg-gray-600 cursor-pointer w-[130px] h-[50px]">
-                <h2 className="ml-[20px] text-white">Read More <ArrowForwardIcon className="text-white" fontSize="small"/></h2>
-            </div>
+            <Button text="Read More" buttonColor="bg-gray-600" buttonTextColor="text-white"/>
         </div>
     </div>
   )
