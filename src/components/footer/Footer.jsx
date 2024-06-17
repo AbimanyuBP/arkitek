@@ -11,13 +11,13 @@ export default function Footer() {
     <div className="bg-gray-700">
         <div className="flex p-10 justify-between">
             <img src="\assets\logo\Logo_White.png" className="w-[150px] h-[100px] cursor-pointer" alt="" />
-            <div className=" *:mb-3 *:text-white">
-                <h1 className="text-[20px] font-medium mb-3">Information</h1>
-                <h2 className="cursor-pointer">Main</h2>
-                <h2 className="cursor-pointer">Gallery</h2>
-                <h2 className="cursor-pointer">Projects</h2>
-                <h2 className="cursor-pointer">Certifications</h2>
-                <h2 className="cursor-pointer">Contacts</h2>
+            <div className=" *:text-white">
+                <h1 className="text-[20px] font-medium mb-4">Information</h1>
+                <a href="/"><h2 className="mb-3">Main</h2></a>
+                <a href="/gallery"><h2 className="mb-3">Gallery</h2></a>
+                <a href="/projects"><h2 className="mb-3">Projects</h2></a>
+                <a href="/certifications"><h2 className="mb-3">Certifications</h2></a>
+                <a href="/contacts"><h2 className="mb-3">Contacts</h2></a>
             </div>
             <div className=" *:mb-3 *:text-white">
                 <h1 className="text-[20px] font-medium mb-3">Contacts</h1>

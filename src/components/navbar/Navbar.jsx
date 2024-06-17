@@ -9,27 +9,27 @@ export default function Navbar() {
             <ul className="flex py-[30px] pl-[20px] pr-[200px] justify-between">
                 <li>
                     <hr className="bg-[black] h-[2px]"/>
-                    <span className="text-[12px] cursor-pointer">MAIN</span>
+                    <a href="/"><span className="text-[12px] cursor-pointer">MAIN</span></a>
                     <hr className="bg-[black] h-[2px]"/>
                 </li>
                 <li>
                     <hr className="bg-[black] h-[2px]"/>
-                    <span className="text-[12px] cursor-pointer">GALLERY</span>
+                    <a href="/gallery"><span className="text-[12px] cursor-pointer">GALLERY</span></a>
                     <hr className="bg-[black] h-[2px]"/>
                 </li>
                 <li>
                     <hr className="bg-[black] h-[2px]"/>
-                    <span className="text-[12px] cursor-pointer">PROJECTS</span>
+                    <a href="/projects"><span className="text-[12px] cursor-pointer">PROJECTS</span></a>
                     <hr className="bg-[black] h-[2px]"/>
                 </li>
                 <li>
                     <hr className="bg-[black] h-[2px]"/>
-                    <span className="text-[12px] cursor-pointer">CERTIFICATIONS</span>
+                    <a href="/certifications"><span className="text-[12px] cursor-pointer">CERTIFICATIONS</span></a>
                     <hr className="bg-[black] h-[2px]"/>
                 </li>
                 <li>
                     <hr className="bg-[black] h-[2px]"/>
-                    <span className="text-[12px] cursor-pointer">CONTACTS</span>
+                    <a href="/contacts"><span className="text-[12px] cursor-pointer">CONTACTS</span></a>
                     <hr className="bg-[black] h-[2px]"/>
                 </li>
             </ul>
