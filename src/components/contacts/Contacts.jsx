@@ -1,5 +1,5 @@
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
-import Button from '../misc/Button'
+import ButtonPlain from '../misc/ButtonPlain'
 
 export default function Contacts() {
   return (
@@ -16,7 +16,7 @@ export default function Contacts() {
             <img src="\assets\misc\contacts_guy.png" alt="" />
         </div>
         <div className="">
-            <Button text="Send Email" buttonColor="bg-gray-600" buttonTextColor="text-white"/>
+            <ButtonPlain text="Send Email" buttonColor="bg-gray-600" buttonTextColor="text-white"/>
         </div>
     </div>
   )
