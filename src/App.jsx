@@ -4,8 +4,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
+import Projects from "./pages/projects/Projects";
+import Certifications from "./pages/certifications/Certifications";
+import Contacts from "./pages/contacts/Contacts";
 
 function App() {
 
@@ -17,6 +18,18 @@ function App() {
     {
       path: "/gallery",
       element: <Gallery/>,
+    },
+    {
+      path: "/projects",
+      element: <Projects/>,
+    },
+    {
+      path: "/certifications",
+      element: <Certifications/>,
+    },
+    {
+      path: "/contacts",
+      element: <Contacts/>,
     },
   ]);
 
