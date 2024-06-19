@@ -16,7 +16,7 @@ export default function Contacts() {
             <img src="\assets\misc\contacts_guy.png" alt="" />
         </div>
         <div className="">
-            <ButtonPlain text="Send Email" buttonProp="bg-gray-600" buttonTextProp="text-white"/>
+            <ButtonPlain text="Send Email" buttonProp="bg-gray-600 hover:bg-slate-800" buttonTextProp="text-white"/>
         </div>
     </div>
   )
