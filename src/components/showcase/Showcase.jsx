@@ -40,7 +40,7 @@ export default function Showcase() {
         <Box>
             <ImageList variant="masonry" cols={3} gap={8}>
                 {images.map((item) => (
-                    <ImageListItem key={item.img}  className="cursor-pointer">
+                    <ImageListItem key={item.img}  className="cursor-pointer hover:animate-growabit ">
                         <img src={item.img} alt={item.title}/>
                         <ImageListItemBar
                             title={item.title}
