@@ -15,7 +15,7 @@ function ProjectCard(){
             <div className=" *:mb-10">
                 <h1 className="text-[35px] text-gray-300">Sample Project</h1>
                 <p className="max-w-[500px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ducimus architecto illum quidem officia veniam inventore alias quibusdam labore, dolorum quisquam similique, vitae et officiis recusandae odio consequatur? Voluptate, aut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores laudantium eius, corrupti numquam aliquam amet rerum quod quos id natus, adipisci veritatis repudiandae? Vitae modi exercitationem consequuntur, libero tempora consectetur!</p>
-                <ButtonPlain text="View More" buttonColor="bg-white" buttonTextColor="text-black"/>
+                <ButtonPlain text="View More" buttonProp="bg-white" buttonTextProp="text-black"/>
             </div>
         </div>
     )

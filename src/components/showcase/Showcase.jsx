@@ -50,7 +50,7 @@ export default function Showcase() {
             </ImageList>
         </Box>
         <div className="flex justify-end mt-5">
-            <ButtonPlain text="Read More" buttonColor="bg-gray-600" buttonTextColor="text-white"/>
+            <ButtonPlain text="Read More" buttonProp="bg-gray-600" buttonTextProp="text-white"/>
         </div>
     </div>
   )
