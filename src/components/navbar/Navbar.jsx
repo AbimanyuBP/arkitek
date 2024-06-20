@@ -32,6 +32,7 @@ export default function Navbar() {
                     <a href="/contacts"><span className="text-[12px] cursor-pointer">CONTACTS</span></a>
                     <hr className="bg-white h-[2px] w-[0.1px] ease-in-out delay-150 group-hover:w-[100%] group-hover:bg-black duration-300"/>
                 </li>
+                
             </ul>
         </div>
     </div>
