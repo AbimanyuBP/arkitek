@@ -7,14 +7,15 @@ import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import Stack from '@mui/material/Stack'
+import { projectList } from '../../misc/projectList';
 
-function ProjectCard(){
+function ProjectCard({namaewa, desc, imgLink}){
     return(
         <div className="flex m-10 *:m-5">
-            <img className="w-[550px] h-[400px] object-cover" src="\assets\projects\project_1.png"/>
+            <img className="w-[550px] h-[400px] object-cover" src={imgLink}/>
             <div className=" *:mb-10">
-                <h1 className="text-[35px] text-gray-300">Sample Project</h1>
-                <p className="max-w-[500px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ducimus architecto illum quidem officia veniam inventore alias quibusdam labore, dolorum quisquam similique, vitae et officiis recusandae odio consequatur? Voluptate, aut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores laudantium eius, corrupti numquam aliquam amet rerum quod quos id natus, adipisci veritatis repudiandae? Vitae modi exercitationem consequuntur, libero tempora consectetur!</p>
+                <h1 className="text-[35px] text-gray-300">{"Project "+namaewa}</h1>
+                <p className="max-w-[500px]">{desc}</p>
                 <ButtonPlain text="View More" buttonProp="bg-white hover:bg-slate-200" buttonTextProp="text-black"/>
             </div>
         </div>
@@ -26,9 +27,9 @@ export default function Projects() {
     <div>
         <Navbar/>
         <TitleText top="Our" bottom="Projects"/>
-        <ProjectCard/>
-        <ProjectCard/>
-        <ProjectCard/>
+        {projectList.slice(0-3).map((project) => (
+                <ProjectCard namaewa={project.projectName} desc={project.projectOverview} imgLink={project.imgUrl}/>
+                ))}
         <div className="flex *:ml-20 *:my-10">
           <div className="">
               <h1 className="text-[30px]">1 <HorizontalRuleIcon sx={{fontSize: "50px", color: "gray"}} className="rotate-[-45deg]"/> 4</h1>

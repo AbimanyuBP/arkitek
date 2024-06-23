@@ -6,31 +6,11 @@ import project4 from "/assets/projects/project_4.jpg"
 import project5 from "/assets/projects/project_5.jpg"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import ButtonPlain from "../misc/ButtonPlain"
+import { Link } from "react-router-dom"
+import { projectList } from "../../misc/projectList"
 
 
 export default function Showcase() {
-    const images = [
-        {
-            img: project1,
-            title: "Project Aulum"
-        },
-        {
-            img: project2,
-            title: "Project Navaro"
-        },
-        {
-            img: project3,
-            title: "Project Merry"
-        },
-        {
-            img: project4,
-            title: "Project Autumn"
-        },
-        {
-            img: project5,
-            title: "Project Breeze"
-        },
-    ]
 
   return (
     <div className="my-5 mx-20">
@@ -39,18 +19,18 @@ export default function Showcase() {
         </div>
         <Box>
             <ImageList variant="masonry" cols={3} gap={8}>
-                {images.map((item) => (
-                    <ImageListItem key={item.img}  className="cursor-pointer hover:animate-growabit ">
-                        <img src={item.img} alt={item.title}/>
+                {projectList.slice(0-5).map((item) => (
+                    <ImageListItem key={item.imgUrl}  className="cursor-pointer hover:animate-growabit ">
+                        <img src={item.imgUrl} alt={item.projectName}/>
                         <ImageListItemBar
-                            title={item.title}
+                            title={item.projectName}
                         />
                     </ImageListItem>
                 ))}
             </ImageList>
         </Box>
         <div className="flex justify-end mt-5">
-            <ButtonPlain text="Read More" buttonProp="bg-gray-600 hover:bg-slate-800" buttonTextProp="text-white"/>
+            <Link to={'/projects'}><ButtonPlain text="Read More" buttonProp="bg-gray-600 hover:bg-slate-800" buttonTextProp="text-white"/></Link>
         </div>
     </div>
   )

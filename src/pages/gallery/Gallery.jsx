@@ -17,50 +17,10 @@ import Button from '@mui/material/Button'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'
 import Stack from '@mui/material/Stack'
+import { projectList } from '../../misc/projectList'
 
 export default function Gallery() {
-  const images = [
-    {
-        img: project1,
-        title: "Project Aulum"
-    },
-    {
-        img: project2,
-        title: "Project Navaro"
-    },
-    {
-        img: project3,
-        title: "Project Merry"
-    },
-    {
-        img: project4,
-        title: "Project Autumn"
-    },
-    {
-        img: project5,
-        title: "Project Breeze"
-    },
-    {
-      img: project6,
-      title: "Project Darum"
-    },
-    {
-      img: project7,
-      title: "Project Farud"
-    },
-    {
-      img: project8,
-      title: "Project Mellow"
-    },
-    {
-      img: project9,
-      title: "Project Celli"
-    },
-    {
-      img: project10,
-      title: "Project Verci"
-    },
-  ]
+  const images = projectList
 
   return (
     <div>
@@ -69,10 +29,10 @@ export default function Gallery() {
         <Box className=" m-20 flex justify-center">
             <ImageList cols={5} gap={8}>
                 {images.map((item) => (
-                    <ImageListItem key={item.img}  className="cursor-pointer">
-                        <img src={item.img} alt={item.title}/>
+                    <ImageListItem key={item.imgUrl}  className="cursor-pointer">
+                        <img src={item.imgUrl} alt={"Project " + item.projectName}/>
                         <ImageListItemBar
-                            title={item.title}
+                            title={"Project " + item.projectName}
                         />
                     </ImageListItem>
                 ))}

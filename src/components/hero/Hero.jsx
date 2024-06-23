@@ -3,23 +3,10 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import Stack from '@mui/material/Stack';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import {projectList} from '../../misc/projectList';
 
 export default function Hero() {
-    const projectList = [
-        {
-            img: "public/assets/projects/project_1.png"
-        },
-        {
-            img: "public/assets/projects/project_2.jpg"
-        },
-        {
-            img: "public/assets/projects/project_3.jpg"
-        },
-        {
-            img: "public/assets/projects/project_4.jpg"
-        },
-    ];
 
     const [clicked, useClicked] = useState(0);
 
@@ -28,7 +15,7 @@ export default function Hero() {
     <div className="flex justify-center items-center">
         <div className="flex-[2]">
             <div className="flex flex-col justify-center items-center">
-                <h1 className="text-[98px] leading-[50px]">Project<br/><span className="text-[50px]">Lorum</span></h1>
+                <h1 className="text-[98px] leading-[50px]">Project<br/><span className="text-[50px]">{projectList[clicked].projectName}</span></h1>
             </div>
             <div className="mx-[94px] mt-16">
                 <Stack spacing={2} direction="row">
@@ -41,7 +28,7 @@ export default function Hero() {
             </div>
         </div>
         <div className="flex-[4]">
-            <img src={projectList[clicked].img} className="w-[800px] h-[700px] object-cover" alt="" />
+            <img src={projectList[clicked].imgUrl} className="w-[800px] h-[700px] object-cover" alt="" />
             <div className="bg-white cursor-pointer w-[200px] h-[50px] relative bottom-[50px] flex items-center">
                 <h2 className="ml-[20px]">View Project <ArrowForwardIcon className="text-[black]" fontSize="small"/></h2>
             </div>
