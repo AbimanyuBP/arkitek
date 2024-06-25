@@ -20,7 +20,6 @@ import Stack from '@mui/material/Stack'
 import { projectList } from '../../misc/projectList'
 
 export default function Gallery() {
-  const images = projectList
 
   return (
     <div>
@@ -28,7 +27,7 @@ export default function Gallery() {
         <TitleText top="Photo" bottom="Gallery"/>
         <Box className=" m-20 flex justify-center">
             <ImageList cols={5} gap={8}>
-                {images.map((item) => (
+                {projectList.map((item) => (
                     <ImageListItem key={item.imgUrl}  className="cursor-pointer">
                         <img src={item.imgUrl} alt={"Project " + item.projectName}/>
                         <ImageListItemBar
@@ -40,7 +39,7 @@ export default function Gallery() {
         </Box>
         <div className="flex *:ml-20 *:my-10">
           <div className="">
-              <h1 className="text-[30px]">1 <HorizontalRuleIcon sx={{fontSize: "50px", color: "gray"}} className="rotate-[-45deg]"/> 4</h1>
+              <h1 className="text-[30px]">1 <HorizontalRuleIcon sx={{fontSize: "50px", color: "gray"}} className="rotate-[-45deg]"/> 1</h1>
           </div>
           <div className="">
                 <Stack spacing={2} direction="row">
