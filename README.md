@@ -1,8 +1,15 @@
-# React + Vite
+# Arkitek - Architecture Company Website 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Arkitek is the Frontend of a Architecture Design Company Website that servers as a company portfolio showcasing different building that was designed by the company and provides a way to contact for potential client.
 
-Currently, two official plugins are available:
+Built using React with Vite, Tailwind and React Router for pages management. design is based on Padre Loo Website of Architects Web Design on Figma
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Showcase
+![Arkitek Landing Page](public/assets/misc/Arkitek_Landing_Page_GIF.gif)
+Arkitek Landing Page
+![Arkitek Gallery Page](public\assets\misc\Arkitek_Gallery_Page.png)
+Arkitek Gallery Page
+![Arkitek Projects Page](public\assets\misc\Arkitek_Project_Page.png)
+Arkitek Projects Page
+
+
