@@ -15,7 +15,7 @@ export default function Hero() {
     <div className="flex justify-center items-center">
         <div className="flex-[2]">
             <div className="flex flex-col justify-center items-center">
-                <h1 className="text-[98px] leading-[50px]">Project<br/><span className="text-[50px]">{projectList[clicked].projectName}</span></h1>
+                <h1 className="text-[98px] text-slate-400 leading-[50px]">Project<br/><span className="text-[50px] text-black">{projectList[clicked].projectName}</span></h1>
             </div>
             <div className="mx-[94px] mt-16">
                 <Stack spacing={2} direction="row">
