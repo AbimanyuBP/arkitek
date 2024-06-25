@@ -7,9 +7,9 @@ Built using React with Vite, Tailwind and React Router for pages management. des
 ## Showcase
 ![Arkitek Landing Page](public/assets/misc/Arkitek_Landing_Page_GIF.gif)
 Arkitek Landing Page
-![Arkitek Gallery Page](public\assets\misc\Arkitek_Gallery_Page.png)
+![Arkitek Gallery Page](public/assets/misc/Arkitek_Gallery_Page.png)
 Arkitek Gallery Page
-![Arkitek Projects Page](public\assets\misc\Arkitek_Project_Page.png)
+![Arkitek Projects Page](public/assets/misc/Arkitek_Project_Page.png)
 Arkitek Projects Page
 
 
